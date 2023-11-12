@@ -1,0 +1,24 @@
+.activities {
+  padding: 20px;
+  margin-bottom: 10px;
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    svg {
+      
+    }
+    span {
+      color: #fff;
+    }
+  }
+  .images {
+    .activite {
+      grid-column: span 3 / span 3;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

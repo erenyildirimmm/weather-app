@@ -1,0 +1,69 @@
+@media (max-width: 1024px) {
+  .weather-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .location {
+      flex: 1;
+      order: 1;
+      flex-basis: 100% !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .city {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 0;
+        ._icon {
+          order: 2;
+          svg {
+            width: 15px;
+          }
+        }
+      }
+      .status {
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .degree {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+    .icon {
+      flex: 1;
+      order: 3;
+      display: flex;
+      justify-content: end;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .date {
+      flex: 1;
+      order: 2;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .weather-info {
+    &.jumbotron {
+      background-color: transparent !important;
+      padding: inherit !important;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px !important;
+  .location {
+    text-align: center;
+    .city {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 20px;
+      span {
+        order: 2;
+      }
+      ._icon {
+        order: 1;
+        svg {
+          width: 25px;
+        }
+      }
+    }
+    .status {
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 50px;
+    }
+    .degree {
+      font-size: 40px;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  .icon {
+    svg {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  .date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+@import "./media-queries";

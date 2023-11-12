@@ -1,0 +1,44 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  .logo {
+    img {
+      width: 100%;
+    }
+    margin-bottom: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    li {
+      .icon {
+        &._weather {
+          svg {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        svg {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      a {
+        color: #C4C3C1;
+        text-decoration: none;
+        font-size: 9.536px;
+        font-weight: 600; 
+        text-align: center;
+      }
+    }
+  }
+}
+
+@import './media-queries'

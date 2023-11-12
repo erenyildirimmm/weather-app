@@ -1,0 +1,28 @@
+.app-logo {
+  margin-bottom: 20px;
+  img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+.forecast-chart {
+  padding: 15px;
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 16px;
+    .icon {
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .recharts-responsive-container {
+    margin: auto;
+  }
+}

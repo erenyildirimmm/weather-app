@@ -1,0 +1,43 @@
+.forecast-slide {
+  display: flex;
+  align-items: center;
+  .swiper-wrapper {
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    .slide-items {
+      padding: 40px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .swiper-slide {
+        width: auto !important;
+        .day {
+          margin-bottom: 40px;
+          font-size: 12px;
+        }
+        .icon {
+          margin-bottom: 15px;
+          svg {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .degree {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .swiper-button-prev, .swiper-button-next {
+    color: #fff !important;
+    width: 20px !important;
+    height: 20px !important;
+    &::after {
+    font-size: 20px;
+    }
+  }
+}
+
+@import './media-queries'

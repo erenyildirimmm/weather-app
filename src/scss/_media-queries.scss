@@ -1,0 +1,88 @@
+@media (max-width: 1024px) {
+  .app {
+    position: relative;
+    .mobile-menu {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      z-index: 3;
+      &.jumbotron {
+        padding: 20px 0;
+      }
+    }
+    .menu-button {
+      button {
+        display: block;
+        position: fixed;
+        background-color: #fff;
+        border: none;
+        bottom: 15px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 9;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .mobile-menu-overlay {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      z-index: 3;
+    }
+    .app-conditions {
+      grid-column: span 5 / span 5;
+    }
+    .grid-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      display: grid;
+      gap: 16px;
+      .app-weather-info {
+        grid-column: span 12 / span 12 !important;
+      }
+      .app-forecast {
+        grid-column: span 12 / span 12 !important;
+      }
+      .app-destkop-menu {
+        display: none;
+      }
+      .twin {
+        grid-column: span 7 / span 7;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    .grid-12 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      display: grid;
+      gap: 16px;
+      .app-weather-info {
+        grid-column: 1 / -1 !important;
+      }
+      .app-forecast {
+        grid-column: 1 / -1 !important;
+      }
+      .twin {
+        grid-column: 1 / -1 !important;
+      }
+      .app-conditions {
+        grid-column: 1 / -1;
+      }
+      .app-desktop-menu {
+        display: none;
+      }
+    }
+  }
+}

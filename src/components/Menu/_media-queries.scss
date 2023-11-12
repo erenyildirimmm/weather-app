@@ -1,0 +1,16 @@
+@media (max-width: 1024px) {
+  .menu {
+    ul {
+      li {
+        .icon {
+          &._weather {
+            svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
